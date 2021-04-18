@@ -5,3 +5,8 @@
 .btn-primary:hover {
     background-color: brown;
 }
+
+.col {
+    background-color: grey;
+    border: 2px solid black;
+}
