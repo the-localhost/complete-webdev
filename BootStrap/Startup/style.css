@@ -15,3 +15,24 @@ h1 {
   color: #e2dbdb;
   /*text-transform: uppercase;*/ /* we'll use bootstrap class to do the same*/
 }
+
+.btn{
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #f05f44;
+  border-color: #f05f44;
+}
+
+.btn-primary:hover {
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 3px;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
