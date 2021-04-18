@@ -37,7 +37,7 @@ hr {
   border-color: #f05f44;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active {
   background-color: #ee4b08;
   border-color: #ee4b08;
   border-width: 3px;
