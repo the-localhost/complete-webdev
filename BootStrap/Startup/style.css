@@ -16,6 +16,12 @@ h1 {
   /*text-transform: uppercase;*/ /* we'll use bootstrap class to do the same*/
 }
 
+hr {
+  background-color: #f05f44;
+  height: 3px;
+  max-width: 65px;
+}
+
 .btn{
   font-weight: 700;
   border-radius: 300px;
