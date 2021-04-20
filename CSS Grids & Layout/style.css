@@ -1,8 +1,9 @@
 .container{
     display: grid;
     gap: 20px;
-    grid-template-columns: auto repeat(2, 1fr);
-    grid-template-rows: 2fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    justify-items: center;
 }
 
 .zone {
