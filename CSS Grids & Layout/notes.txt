@@ -1,0 +1,9 @@
+.container{
+    display: grid;
+
+    /* this makes it very responsive
+        the 1st arg of minmax is the least value, 2nd arg is max
+        auto-fill fills the space with given value automatically
+    */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
