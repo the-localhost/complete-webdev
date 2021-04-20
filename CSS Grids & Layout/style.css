@@ -2,8 +2,12 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: 2fr 3fr;
-    align-items: end;
+    grid-template-rows: 1fr;
+}
+
+.green {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .zone {
