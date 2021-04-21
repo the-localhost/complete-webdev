@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #flex-container {
     padding: 0;
     display: flex;
@@ -19,6 +23,10 @@
 
 .green {
     height: 40px;
+}
+
+.red {
+    height: 45vh;
 }
 
 .zone:hover {
