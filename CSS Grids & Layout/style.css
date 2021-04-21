@@ -8,7 +8,7 @@
 .green {
     grid-column: span 2;
     grid-row: 1/4;
-    justify-self: end;
+    align-self: end;
 }
 
 .zone {
