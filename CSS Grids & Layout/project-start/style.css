@@ -46,8 +46,15 @@ a {
     margin-left: auto;
 }
 
-/* grid */
+/* cover */
+.cover {
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/* grid */
 #grid-container {
     display: grid;
     gap: 20px;
@@ -64,13 +71,10 @@ a {
     width: 100%;
 }
 
-.cover {
-    height: 45vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* footer */
+footer {
+    text-align: center;
 }
-
 
 .zone:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
