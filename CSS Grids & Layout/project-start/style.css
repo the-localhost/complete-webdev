@@ -12,7 +12,6 @@ body {
 .zone {
     margin:0;
     cursor:pointer;
-    display:inline-block;
     padding:15px 50px;
     color:#FFF;
     font-size:2em;
@@ -21,9 +20,26 @@ body {
     transition: all 0.3s linear;
 }
 
+/* nav */
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #f5f5f6;
+    text-decoration: none;
+}
+
 #grid-container {
     display: grid;
-    gap: 50px;
+    gap: 50px 50px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
@@ -33,6 +49,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 img {
@@ -40,12 +57,12 @@ img {
     height: 50%;
 }
 
-.green {
-    height: 40px;
-}
-
 .red {
     height: 45vh;
+}
+
+.blue {
+    padding: 15px;
 }
 
 .zone:hover {
