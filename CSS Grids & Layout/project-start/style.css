@@ -21,6 +21,14 @@ body {
     transition: all 0.3s linear;
 }
 
+#grid-container {
+    
+}
+
+.project{
+    background-color: #444;
+}
+
 .green {
     height: 40px;
 }
