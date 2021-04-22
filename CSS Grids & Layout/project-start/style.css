@@ -48,22 +48,18 @@ a {
 
 #grid-container {
     display: grid;
-    gap: 50px 50px;
+    gap: 40px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .project{
     background-color: #444;
-    /* flex property used to keep img at the center*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    padding: 130px;
+    margin: 20px;
 }
 
-img {
-    width: 50%;
-    height: 50%;
+.project > img {
+    width: 100%;
 }
 
 .red {
