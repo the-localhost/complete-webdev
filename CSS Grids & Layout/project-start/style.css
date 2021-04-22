@@ -46,10 +46,12 @@ a {
     margin-left: auto;
 }
 
+/* grid */
+
 #grid-container {
     display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .project{
@@ -62,16 +64,13 @@ a {
     width: 100%;
 }
 
-.red {
+.cover {
     height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.blue {
-    padding: 15px;
-}
 
 .zone:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
