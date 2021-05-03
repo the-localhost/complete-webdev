@@ -13,6 +13,9 @@ function createListElement() {
 	li.appendChild(document.createTextNode(text));
 	ul.appendChild(li);
 	input.value = "";
+	li.addEventListener("click", function(){
+		this.classList.toggle("done");
+	});
 }
 
 function addListAfterClick() {
