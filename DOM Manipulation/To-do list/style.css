@@ -1,3 +1,8 @@
 .done {
   text-decoration: line-through;
 }
+
+li{
+	display:inline;
+	margin-left: 20px;
+}
