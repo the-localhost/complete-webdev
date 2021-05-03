@@ -7,3 +7,15 @@
     */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
+
+
+
+/* pushes the element to the very right */
+/* commonly used in the nav bar to push a nav element to the right */
+margin-left: auto;
+
+/* commonly used with navbar to stick it to the top */
+.sticky {
+    position: fixed;
+    
+}
