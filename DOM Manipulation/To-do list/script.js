@@ -9,14 +9,25 @@ function inputLength() {
 }
 
 function createListElement() {
+	var div = document.createElement("div");
+
+	var btn = document.createElement("button");
+	btn.appendChild(document.createTextNode("X"));
+	div.appendChild(btn);
+	btn.addEventListener("click", function(){
+		this.parentElement.parentElement.removeChild(this.parentElement);
+	});
+
 	var li = document.createElement("li");
 	var text = input.value.toLowerCase().replace(/\b(\w)/g, x => x.toUpperCase());
 	li.appendChild(document.createTextNode(text));
-	ul.appendChild(li);
+	div.appendChild(li);
 	input.value = "";
 	li.addEventListener("click", function(){
 		this.classList.toggle("done");
 	});
+
+	ul.append(div);
 }
 
 function addListAfterClick() {
