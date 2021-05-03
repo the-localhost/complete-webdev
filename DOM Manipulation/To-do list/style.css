@@ -2,6 +2,10 @@
   text-decoration: line-through;
 }
 
+div {
+	margin-bottom: 5px;
+}
+
 li{
 	display:inline;
 	margin-left: 20px;
