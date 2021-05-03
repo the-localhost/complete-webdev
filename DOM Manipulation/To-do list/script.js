@@ -10,3 +10,5 @@ function addListAfterClick() {
 		input.value = "";
 	}
 }
+
+button.addEventListener("click", addListAfterClick);
