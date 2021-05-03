@@ -10,3 +10,9 @@ li{
 	display:inline;
 	margin-left: 20px;
 }
+
+.li-del:hover {
+	color: #f00;
+	background-color: #fff;
+	border: 2px solid orange;
+}
