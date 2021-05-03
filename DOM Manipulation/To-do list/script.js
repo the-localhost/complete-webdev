@@ -36,6 +36,8 @@ function cutLiAfterClick() {		// adds event listener to all li elements present
 	}
 }
 
+cutLiAfterClick();
+
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
