@@ -14,5 +14,5 @@ li{
 .li-del:hover {
 	color: #f00;
 	background-color: #fff;
-	border: 2px solid orange;
+	border: 2px solid #f83f49; 
 }
