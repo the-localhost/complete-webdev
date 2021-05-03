@@ -51,6 +51,8 @@ function deleteTaskAfterClick() {
 
 cutLiAfterClick();
 
+deleteTaskAfterClick();
+
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
