@@ -31,6 +31,7 @@ function createListElementInDiv(div) {
 
 function createUlDiv() {
 	var div = document.createElement("div");
+	div.setAttribute("class", "entry");
 	createButtonElementInDiv(div);
 	createListElementInDiv(div);
 	ul.append(div);
