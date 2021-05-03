@@ -8,16 +8,16 @@ function inputLength() {
 	return input.value.length;
 }
 
-function createListElement() {
-	var div = document.createElement("div");
-
+function createButtonElementInDiv(div) {
 	var btn = document.createElement("button");
 	btn.appendChild(document.createTextNode("X"));
 	div.appendChild(btn);
 	btn.addEventListener("click", function(){
 		this.parentElement.parentElement.removeChild(this.parentElement);
 	});
+}
 
+function createListElementInDiv(div) {
 	var li = document.createElement("li");
 	var text = input.value.toLowerCase().replace(/\b(\w)/g, x => x.toUpperCase());
 	li.appendChild(document.createTextNode(text));
@@ -26,19 +26,24 @@ function createListElement() {
 	li.addEventListener("click", function(){
 		this.classList.toggle("done");
 	});
+}
 
+function createUlDiv() {
+	var div = document.createElement("div");
+	createButtonElementInDiv(div);
+	createListElementInDiv(div);
 	ul.append(div);
 }
 
 function addListAfterClick() {
 	if (inputLength() > 0) {
-		createListElement();
+		createUlDiv();
 	}
 }
 
 function addListAfterKeypress(event) {
 	if (inputLength() > 0 && event.keyCode === 13) {
-		createListElement();
+		createUlDiv();
 	}
 }
 
