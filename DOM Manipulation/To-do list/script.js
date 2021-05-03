@@ -11,6 +11,7 @@ function inputLength() {
 function createButtonElementInDiv(div) {
 	var btn = document.createElement("button");
 	btn.appendChild(document.createTextNode("X"));
+	btn.setAttribute("class", "li-del");
 	div.appendChild(btn);
 	btn.addEventListener("click", function(){
 		this.parentElement.parentElement.removeChild(this.parentElement);
