@@ -2,6 +2,7 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 var li = document.querySelectorAll("li");
+var btn = document.querySelectorAll(".li-del");
 
 function inputLength() {
 	return input.value.length;
@@ -35,6 +36,15 @@ function cutLiAfterClick() {		// adds event listener to all li elements present
 		var item = li[i];
 		item.addEventListener("click", function(){
 				this.classList.toggle("done");
+		});
+	}
+}
+
+function deleteTaskAfterClick() {
+	for(var i=0; i<btn.length; i++){
+		var item = btn[i];
+		item.addEventListener("click", function(){
+				this.parentElement.parentElement.removeChild(this.parentElement);
 		});
 	}
 }
