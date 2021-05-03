@@ -8,7 +8,8 @@ function inputLength() {
 
 function createListElement() {
 	var li = document.createElement("li");
-	li.appendChild(document.createTextNode(input.value));
+	var text = input.value.toLowerCase().replace(/\b(\w)/g, x => x.toUpperCase());
+	li.appendChild(document.createTextNode(text));
 	ul.appendChild(li);
 	input.value = "";
 }
