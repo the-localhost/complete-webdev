@@ -1,5 +1,12 @@
 body{
     background: linear-gradient(to right, #e1ff00, #00ff00);
     text-align: center;
+}
+
+h1{
+    font-weight: 600;
     text-decoration: underline;
+}
+.color{
+    margin: 10px;
 }
