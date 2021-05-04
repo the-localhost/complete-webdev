@@ -10,3 +10,6 @@ function change_color(){
     var bg = "linear-gradient(to right, "+color1+", "+color2+")";
     body.style.background = bg;
 }
+
+colorSelector1.addEventListener("input", change_color);
+colorSelector2.addEventListener("input", change_color);
