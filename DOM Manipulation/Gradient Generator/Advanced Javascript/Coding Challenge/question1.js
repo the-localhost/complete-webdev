@@ -32,3 +32,6 @@ function cleanIt(arr) {
 
 const cleanArr = cleanIt(arr);
 console.log(JSON.stringify(cleanArr));
+
+// Time Complexity: O(2n) = O(n)
+// Space complexity: O(N), N = number of unique elements
