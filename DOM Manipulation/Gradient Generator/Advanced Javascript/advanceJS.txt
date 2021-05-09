@@ -37,6 +37,10 @@ ES6 (few additions are listed)
 ====================================================================
 ES7
 ```
+~ .includes:
+	"Jonathon".includes("John") 				// true
+	["Hello", "Hi", "Bye"].includes("Hey")		// false
+
 ~ .padStart(), .padEnd()
 	"Turtle".padStart(6)			// "      Turtle"
 	"Turtle".padEnd(6)				// "Turtle      "
