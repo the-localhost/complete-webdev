@@ -1,2 +1,12 @@
 ES6 (few additions are listed)
 ```
+~ for-of loop: iterates over only iterables (arrays, strings in JS)
+	Code:	
+			const list = ["color", "brush", "sheet"];
+			for (item of list) {
+				console.log(item);
+			}
+	Output:
+			color
+			brush
+			sheet
