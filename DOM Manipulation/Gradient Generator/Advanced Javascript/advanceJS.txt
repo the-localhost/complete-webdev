@@ -44,11 +44,13 @@ ES7
 ~ ** (raised to the power of)
 	4**3		// 64
 	2**10		// 1024
-
+====================================================================
+ES8
+```
 ~ .padStart(), .padEnd()
 	"Turtle".padStart(6)			// "      Turtle"
 	"Turtle".padEnd(6)				// "Turtle      "
-    -------------------------------------------------------------------
+-------------------------------------------------------------------
 ~ comma after list of parameters don't throw error
 	function abc(param1, param2, param3,){
 		...
