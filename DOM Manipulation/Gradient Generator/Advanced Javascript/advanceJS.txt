@@ -114,3 +114,11 @@ ES10
 	-> Object.fromEntries([['maya', 24], ['helen'], 26]) 	// {maya: 24, helen: 26}
 	-> let obj = {user: "Angel", age: "25"}
 	   Object.fromEntries(Object.entries(obj))				// {user: "Angel", age: "25"}
+-------------------------------------------------------------------
+~ try-catch
+	try{
+		console.log(bob);	// bob is not defined
+	} catch {
+		console.log("There is an error");
+	}
+	// Output: There is an error
