@@ -125,3 +125,10 @@ ES10
 ====================================================================
 ES2020
 ``````
+~ BigInt: 
+	-> Numbers have a max safe value; above that we need to use BigInt
+	-> An 'n' is suffixed after the number to make it BigInt
+			- typeof 1n						// bigint
+			- Number.MAX_SAFE_INTEGER		// 9007099254740991 (= (2^53)-1)
+			- 9007099254740991 + 10			// 9007199254741000 (WRONG!)
+			- 9007099254740991n + 10n		// 9007099254741001n
