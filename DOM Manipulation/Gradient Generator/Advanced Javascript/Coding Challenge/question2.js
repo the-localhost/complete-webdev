@@ -20,3 +20,7 @@ function findTwoNumbersSum(arr, sum){
     }
 }
 console.log(findTwoNumbersSum([1,2,3], 4))
+
+
+// Time Complexity: O(n2)
+// Auxiliary Space: O(1)
