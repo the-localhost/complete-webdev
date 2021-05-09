@@ -40,3 +40,8 @@ ES7
 ~ .padStart(), .padEnd()
 	"Turtle".padStart(6)			// "      Turtle"
 	"Turtle".padEnd(6)				// "Turtle      "
+    -------------------------------------------------------------------
+~ comma after list of parameters don't throw error
+	function abc(param1, param2, param3,){
+		...
+	}
