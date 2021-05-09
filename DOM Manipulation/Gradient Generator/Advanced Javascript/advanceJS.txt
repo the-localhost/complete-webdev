@@ -109,3 +109,8 @@ ES10
 ~ .trimStart(), .trimEnd()
 	"      Hello!".trimStart()		// "Hello!"
 	"Amazing!      ".trimEnd()		// "Amazing!"
+-------------------------------------------------------------------
+~ .fromEntries(entries): creates an object from entries array
+	-> Object.fromEntries([['maya', 24], ['helen'], 26]) 	// {maya: 24, helen: 26}
+	-> let obj = {user: "Angel", age: "25"}
+	   Object.fromEntries(Object.entries(obj))				// {user: "Angel", age: "25"}
