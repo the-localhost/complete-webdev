@@ -170,3 +170,35 @@ ES2020
 				}
 			});
 			console.log(pins2);							// [444304]
+-------------------------------------------------------------------
+~ Nullish Coalescing Operator (??)
+			let user1 = {
+				username: "John",
+				address: {
+					city: "California",
+					PIN: 444304
+				},
+				worth: 0								// the worth is absolute 0
+			};
+			let user2 = {
+				username: "Sally",
+				address: {
+					city: "San Diego",
+				},										// worth is not known
+			};
+	-> using OR operator (||) to process worth:
+			let user1Worth = user1.worth || "Don't know";
+			let user2Worth = user2.worth || "Don't know";
+			console.log(user1Worth);						// Don't Know
+			console.log(user2Worth);						// Don't Know
+	 	- In the above assignment, || checks the falsy/truthy ness of its first operand. 
+	 	  That is, here, as user1.worth is 0 which is a falsy value, "Don't know" is assigned.
+	 	  But, we DO know the worth of user1 to be absolute 0, unlike that of user2.
+	-> using Nullish Coalescing Operator (??):
+			let user1Worth = user1.worth ?? "Don't know";
+			let user2Worth = user2.worth ?? "Don't know";
+			console.log(user1Worth);						// 0
+			console.log(user2Worth);						// Don't Know
+		- In the above assignment, ?? checks if its first operand is null/undefined.
+		  So, here user1.worth is 0 which is neither null nor undefined. Hence 0 is assigned.
+		  Since user2.worth is undefined, the ?? assigns "Don't know".
