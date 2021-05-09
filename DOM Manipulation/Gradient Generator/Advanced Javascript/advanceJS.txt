@@ -95,3 +95,10 @@ ES9
 ====================================================================
 ES10
 ````
+~ .flat(level=1): 
+	-> flattens a multidimensional array to a given depth level (default 1)
+		[1,[2,3],[4,5]].flat()			// [1,2,3,4,5]
+		[1,2,[3,4,[5]]].flat()			// [1,2,3,4,[5]]
+		[1,2,[3,4,[5]]].flat(2)			// [1,2,3,4,5]
+	-> cleans up the array with empty entries
+		['bob', 'sally', , , , , , , 'cindy'].flat()	// ['bob', 'sally', 'cindy']
