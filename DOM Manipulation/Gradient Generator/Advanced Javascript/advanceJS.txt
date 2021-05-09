@@ -40,6 +40,10 @@ ES7
 ~ .includes:
 	"Jonathon".includes("John") 				// true
 	["Hello", "Hi", "Bye"].includes("Hey")		// false
+-------------------------------------------------------------------
+~ ** (raised to the power of)
+	4**3		// 64
+	2**10		// 1024
 
 ~ .padStart(), .padEnd()
 	"Turtle".padStart(6)			// "      Turtle"
