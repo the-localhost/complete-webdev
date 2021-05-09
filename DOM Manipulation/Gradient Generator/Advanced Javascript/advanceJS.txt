@@ -55,3 +55,37 @@ ES8
 	function abc(param1, param2, param3,){
 		...
 	}
+-------------------------------------------------------------------
+~ Object.values, Object.entries		(earlier, only Object.keys)
+	let obj = {
+		username: "Rudolf",
+		password: "123",
+		location: "California"
+	};
+
+	Object.keys(obj).forEach((key, index) => {
+		console.log(key, obj[key]);
+	});
+	/*	OUTPUT
+	username Rudolf
+	password 123
+	location California
+	*/
+
+	Object.values(obj).forEach(value => {
+		console.log(value);
+	});
+	/*	OUTPUT
+	Rudolf
+	123
+	California
+	*/
+
+	Object.entries(obj).forEach(entry => {
+		console.log(entry);
+	});
+	/* OUTPUT
+	["username", "Rudolf"]
+	["password", "123"]
+	["location", "California"]
+	*/
