@@ -102,3 +102,6 @@ ES10
 		[1,2,[3,4,[5]]].flat(2)			// [1,2,3,4,5]
 	-> cleans up the array with empty entries
 		['bob', 'sally', , , , , , , 'cindy'].flat()	// ['bob', 'sally', 'cindy']
+-------------------------------------------------------------------
+~ .flatMap() : applies map() followed by flat(1)
+	[1,2,3,4].flatMap(x => [x * 2])		// [2, 4, 6, 8]
