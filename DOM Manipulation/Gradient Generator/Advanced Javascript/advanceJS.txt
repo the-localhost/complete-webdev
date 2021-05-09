@@ -122,3 +122,6 @@ ES10
 		console.log("There is an error");
 	}
 	// Output: There is an error
+====================================================================
+ES2020
+``````
