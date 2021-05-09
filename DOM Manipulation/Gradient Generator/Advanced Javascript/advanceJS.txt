@@ -10,3 +10,27 @@ ES6 (few additions are listed)
 			color
 			brush
 			sheet
+-------------------------------------------------------------------
+~ for-in loop: enumerates over object's properties (arrays are a type of object)
+	Code:
+			const quantities = {
+				color: 5,
+				brush: 2,
+				sheet: 8
+			}
+			for (item in quantities) {
+				console.log(item);
+			}
+	Output:
+			color
+			brush
+			sheet
+	Code:
+			const list = ["color", "brush", "sheet"];
+			for (item in list) {
+				console.log(item);
+			}
+	Output:
+			0
+			1
+			2
