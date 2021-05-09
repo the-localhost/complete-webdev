@@ -132,3 +132,41 @@ ES2020
 			- Number.MAX_SAFE_INTEGER		// 9007099254740991 (= (2^53)-1)
 			- 9007099254740991 + 10			// 9007199254741000 (WRONG!)
 			- 9007099254740991n + 10n		// 9007099254741001n
+-------------------------------------------------------------------
+~ Optional Chaining Operator (?.)
+			let users = [
+				{
+					username: "John",
+					address: {
+						city: "California",
+						PIN: 444304
+					}
+				},
+				{
+					username: "Sally",
+					address: {
+						city: "San Diego",
+					}
+				},
+				undefined,
+				{
+					username: "Arthur"
+				}
+			];
+
+	-> to find PIN address of all users (for whomever is available): 
+			let pins = [];
+			users.forEach(user => {
+				if(user && user.address && user.address.PIN){		// Observe this line
+					pins.push(user.address.PIN);
+				}
+			});
+			console.log(pins);							// [444304]
+	-> using Optional Chaining Operator (?.):
+			let pins2 = [];
+			users.forEach(user => {
+				if(user?.address?.PIN) {				// easy to write & read
+					pins2.push(user.address.PIN);	
+				}
+			});
+			console.log(pins2);							// [444304]
