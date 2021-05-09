@@ -21,6 +21,12 @@ function findTwoNumbersSum(arr, sum){
 }
 console.log(findTwoNumbersSum([1,2,3], 4))
 
-
 // Time Complexity: O(n2)
 // Auxiliary Space: O(1)
+
+
+/** Method 2
+ *  We can use binary search to look for leftSum element for each elem. 
+ *  Time Complexity: O(n)*O(logn) = O(nlogn)
+ *  Space Complexity: O(1)
+*/
