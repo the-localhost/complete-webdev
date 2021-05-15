@@ -10,6 +10,8 @@ class Hello extends Component {
             <div className="f1 tc">
                 <h1>Hey, hello!</h1>
                 <p>Read our <a href="#">guide to work</a>, if this is your first day.</p>
+                <p>This is what we got:</p><br/>
+                <p>{this.props.greeting}</p>
             </div>
         )
     }
