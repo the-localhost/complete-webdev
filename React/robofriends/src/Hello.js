@@ -3,6 +3,9 @@ import './Hello.css';
 
 class Hello extends Component {
     render() {
+        /** here we use classNames in div attributes as this is JSX and not HTML
+         *  'class' is already a keyword in JS, so it will give warning but will work
+        */
         return (
             <div className="f1 tc">
                 <h1>Hey, hello!</h1>
