@@ -4,7 +4,7 @@ import './Hello.css';
 class Hello extends Component {
     render() {
         return (
-            <div>
+            <div className="f1 tc">
                 <h1>Hey, hello!</h1>
                 <p>Read our <a href="#">guide to work</a>, if this is your first day.</p>
             </div>
