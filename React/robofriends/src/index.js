@@ -8,7 +8,7 @@ import 'tachyons';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Hello />
+    <Hello greeting="We're excited to have you onboard!"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
