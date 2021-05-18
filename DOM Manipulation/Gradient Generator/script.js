@@ -1,15 +1,23 @@
-var colorSelector1 = document.getElementsByName("color1")[0];
-var colorSelector2 = document.getElementsByName("color1")[1];
-var body = document.querySelector("body");
+const colorSelector1 = document.getElementsByName("color1")[0];
+const colorSelector2 = document.getElementsByName("color1")[1];
+const randomSelector = document.getElementById("random");
+const body = document.querySelector("body");
 
 // colorSelector1.addEventListener("onchange", );
 
-function change_color(){
-    var color1 = colorSelector1.value;
-    var color2 = colorSelector2.value;
-    var bg = "linear-gradient(to right, "+color1+", "+color2+")";
+const changeColor = () => {
+    const color1 = colorSelector1.value;
+    const color2 = colorSelector2.value;
+    const bg = "linear-gradient(to right, "+color1+", "+color2+")";
     body.style.background = bg;
 }
 
-colorSelector1.addEventListener("input", change_color);
-colorSelector2.addEventListener("input", change_color);
+const setRandomColor = () => {
+    colorSelector1.value = generateRandomColor();
+    colorSelector2.value = generateRandomColor();
+    changeColor();
+}
+
+colorSelector1.addEventListener("input", changeColor);
+colorSelector2.addEventListener("input", changeColor);
+randomSelector.addEventListener("click", setRandomColor);
