@@ -16,6 +16,10 @@ const getColorNumber = () => {
     return Math.floor(Math.random()*256);
 }
 
+const rgbToHex = (r, g, b) => {
+    return '#'+ r.toString(16) + g.toString(16) + b.toString(16);
+}
+
 const generateRandomColor = () => {
     const r = getColorNumber(), g=getColorNumber(), b=getColorNumber();
     return rgbToHex(r, g, b);
