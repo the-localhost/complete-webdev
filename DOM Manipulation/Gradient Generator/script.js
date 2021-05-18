@@ -12,6 +12,10 @@ const changeColor = () => {
     body.style.background = bg;
 }
 
+const getColorNumber = () => {
+    return Math.floor(Math.random()*256);
+}
+
 const generateRandomColor = () => {
     const r = getColorNumber(), g=getColorNumber(), b=getColorNumber();
     return rgbToHex(r, g, b);
